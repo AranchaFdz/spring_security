@@ -12,7 +12,7 @@ public class GreetingsController {
         return "Hello";
     }
 
-    @PreAuthorize("hasRole('USER')")
+    @PreAuthorize("hasRole('USERS')")
     @GetMapping("/user")
     public String userEndpoint() {
         return "Hello, User!";
