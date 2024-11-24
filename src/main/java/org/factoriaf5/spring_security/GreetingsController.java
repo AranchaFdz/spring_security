@@ -22,5 +22,5 @@ public class GreetingsController {
     @GetMapping("/admin")
     public String adminEndpoint() {
         return "Hello, Admin!";
-    }
+    } 
 }
