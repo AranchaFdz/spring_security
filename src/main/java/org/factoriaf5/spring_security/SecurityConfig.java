@@ -61,9 +61,9 @@ public class SecurityConfig {
         http.addFilterBefore(authenticationJwtTokenFilter(),
                 UsernamePasswordAuthenticationFilter.class);
 
-
         return http.build();
     }
+
 
     @Bean
     public UserDetailsService userDetailsService(DataSource dataSource) {
@@ -99,3 +99,4 @@ public class SecurityConfig {
         return builder.getAuthenticationManager();
     }
 }
+
